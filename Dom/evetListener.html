@@ -11,6 +11,8 @@
     <button id="ID">Click</button>
     <button id="ID2">Click2</button>
     <button id="ID3">Click3</button>
+    <button id="ID4">Click4</button>
+    <button id="borrar">Borrar</button>
     <script>
         document.getElementById("ID").addEventListener("click", function() {
             alert("Funcion dentro del EventListener")
@@ -33,6 +35,33 @@
         function mensaje(a) {
             var mensaje = a;
             alert(mensaje);
+        }
+    </script>
+    <br>
+    <script>
+        document.getElementById("ID4").addEventListener("click", mensaje);
+        addEventListener("click", mensaje2);
+
+        function mensaje2() {
+            alert("SEGUNDO MENSAJE")
+        }
+
+        function mensaje() {
+            alert("PRIMER MENSAJE")
+        }
+    </script>
+    <br>
+    <script>
+        document.getElementById("ID").addEventListener("click", mensaje);
+
+        document.getElementById("borrar").addEventListener("click", borrar);
+
+        function borrar() {
+            document.getElementById("ID").removeEventListener("click", mensaje);
+        }
+
+        function mensaje() {
+            alert("Prueba de mensaje")
         }
     </script>
     <br>
