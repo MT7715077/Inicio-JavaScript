@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<html>
+<title>Lamparas</title>
+<link rel="stylesheet" href="index.html">
+
+</html>
+
+<body>
+    <h1>Mi sitio web</h1>
+    <p>Cambiar los valores de los atributos en html</p>
+    <p>Modificamos la fuente (src) de una imagen, inter cambiandola por otra</p>
+    <img id="Imagen" src="ampolletaA.png" style="width: 150px;">
+    <button onclick="encenderLuz()">Encender </button>
+    <button onclick="apagarLuz()">Apagar</button>
+
+    <script>
+        function encenderLuz() {
+            document.getElementById("Imagen").src = "ampoletaE.png";
+        }
+
+        function apagarLuz() {
+            document.getElementById("Imagen").src = "ampolletaA.png";
+        }
+    </script>
+    <br>
+    <a href="index.html">REGRESAR</a>
+
+</body>
+
+</html>
