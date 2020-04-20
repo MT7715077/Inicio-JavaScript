@@ -3,11 +3,23 @@
 
 <head>
     <title>DOM</title>
+    <link rel="stylesheet" href="getElementsByTagName.html">
+    <link rel="stylesheet" href="getElementsByClassName.html">
 </head>
 
 <body>
     <h1>Mi sitio web</h1>
     <p id="test">Prueba Dom</p>
+    <script>
+        document.getElementById("test").innerHTML = "Cambiando contenido desde javascript";
+    </script>
+    <p id="ID">hola</p>
+    <script>
+        document.getElementById("ID").innerHTML = "MODIFICADO POR ID"
+    </script>
+    <a href="getElementsByTagName.html">ir a name</a>
+    <br>
+    <a href="getElementsByClassName.html">Ir a class</a>
 </body>
 
 </html>
