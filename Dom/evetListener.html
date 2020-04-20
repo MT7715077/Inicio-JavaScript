@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM EVENT LISTENER</title>
+    <link rel="stylesheet" href="index.html">
+</head>
+
+<body>
+    <h1>Mi sitio web Event Listener</h1>
+    <button id="ID">Click</button>
+    <button id="ID2">Click2</button>
+    <button id="ID3">Click3</button>
+    <script>
+        document.getElementById("ID").addEventListener("click", function() {
+            alert("Funcion dentro del EventListener")
+        })
+    </script>
+    <br>
+    <script>
+        document.getElementById("ID2").addEventListener("click", mensaje);
+
+        function mensaje() {
+            alert("Mensaje click 2")
+        }
+    </script>
+    <br>
+    <script>
+        document.getElementById("ID3").addEventListener("click", function() {
+            mensaje("Mensaje click 3 con parametros");
+        });
+
+        function mensaje(a) {
+            var mensaje = a;
+            alert(mensaje);
+        }
+    </script>
+    <br>
+    <a href="index.html">Regresar</a>
+</body>
+
+</html>
